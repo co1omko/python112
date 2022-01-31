@@ -116,7 +116,9 @@ import time
 # result = finish - start
 # print(result)
 
-import locale
-locale.setlocale(locale.LC_ALL, "")
-print(time.strftime("Сегодня: %B %d %Y", time.localtime()))
+# import locale
+# locale.setlocale(locale.LC_ALL, "")
+# print(time.strftime("Сегодня: %B %d %Y", time.localtime()))
+
+print("hello")
 
