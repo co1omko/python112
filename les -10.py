@@ -52,17 +52,17 @@
 # print(m)
 
 
-# def add(x, y):
-#     if x > y:
-#         return x - y
-#     else:
-#         return x + y
-#
-#
-# a = int(input("a = "))
-# b = int(input("b = "))
-# m = add(a, b)
-# print("Результат: ", m)
+def add(x, y):
+    if x > y:
+        return x - y
+    else:
+        return x + y
+
+
+a = int(input("a = "))
+b = int(input("b = "))
+m = add(a, b)
+print("Результат: ", m)
 
 # def cube (a):
 #     return a ** 3
@@ -84,24 +84,24 @@
 #
 # fib(25)
 
-def change(s):
-    start = s.pop()
-    end = s.pop(0)
-    s.append(end)
-    s.insert(0, start)
-    return s
-    # s[0], s[-1] = s[-1], s[0]
-    # return s
-    # # a = lst[0]
-    # # b = lst[-1]
-    # # for i in range(len(lst)):
-    # #     if i == 0:
-    # #         lst[i] = b
-    # #     if i == len(lst) - 1:
-    # #         lst[i] = a
-    # #     print(lst[i], end=" ")
-    #
-
-print(change([1, 2, 3]))
-print(change([9, 12, 33, 54, 105]))
-print(change(["с", "л", "о", "н"]))
+# def change(s):
+#     start = s.pop()
+#     end = s.pop(0)
+#     s.append(end)
+#     s.insert(0, start)
+#     return s
+#     # s[0], s[-1] = s[-1], s[0]
+#     # return s
+#     # # a = lst[0]
+#     # # b = lst[-1]
+#     # # for i in range(len(lst)):
+#     # #     if i == 0:
+#     # #         lst[i] = b
+#     # #     if i == len(lst) - 1:
+#     # #         lst[i] = a
+#     # #     print(lst[i], end=" ")
+#     #
+#
+# print(change([1, 2, 3]))
+# print(change([9, 12, 33, 54, 105]))
+# print(change(["с", "л", "о", "н"]))

@@ -79,14 +79,14 @@ import random as r
 
 # import math  # (math.sqrt)
 # import math as m  # (m.sqrt)
-# from math import *  # (sqrt)
+from math import *  # (sqrt)
 
 # print(math.sqrt(2))
 # print(math.floor(3.8))# округление в меньшую сторону
 # print(math.ceil(3.2)) # в большую сторону
 
-# r = int(input("Введите радиус окружности: "))
-# print("Длинна окружности: ", round(2 * pi * r, 2))
+r = int(input("Введите радиус окружности: "))
+print("Длинна окружности: ", round(2 * pi * r, 2))
 
 # lst = [1, 2, 3, 8.4]
 # print(sum(lst))
@@ -120,5 +120,5 @@ import time
 # locale.setlocale(locale.LC_ALL, "")
 # print(time.strftime("Сегодня: %B %d %Y", time.localtime()))
 
-print("hello")
+# print("hello")
 
