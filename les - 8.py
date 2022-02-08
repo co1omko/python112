@@ -9,20 +9,20 @@ import random as r
 # print(a)
 
 
-# w, h = 5, 4
-# #matrix = [[r.randint(1, 30)for x in range(w)]for y in range(h)]
-# matrix = []
-# for y in range(h):
-#     m = []
-#     for x in range(w):
-#         m.append(r.randint(1, 30))
-#     matrix.extend([m])
-# print(matrix)
-# for h in matrix:
-#     for w in h:
-#         print(w, end="\t\t")
-#     print()
-# print()
+w, h = 5, 4
+#matrix = [[r.randint(1, 30)for x in range(w)]for y in range(h)]
+matrix = []
+for y in range(h):
+    m = []
+    for x in range(w):
+        m.append(r.randint(1, 30))
+    matrix.extend([m])
+print(matrix)
+for h in matrix:
+    for w in h:
+        print(w, end="\t\t")
+    print()
+print()
 
 # w, h = 3, 4
 # ch = 0

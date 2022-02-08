@@ -29,16 +29,14 @@
 #     s = k(r)
 #     print("Площадь: ", s)
 
-# import random as r
-#
-#
-# matrix = [r.randint(1, 15) for i in range(10)]
-# print(matrix)
-# for j in range(1, i):
-for x in range(1, 15):
-    a = []
-    for n in range(1, x):
-        if x % n == 0 and (x == n or n == 1):
-            a.append(n)
 
-    print(a)
+a = []
+b = []
+for i in range(2, 50):
+    for j in range(2, i):
+        if i % j == 0:
+            b.append(i)
+    else:
+        a.append(i)
+print(min(a))
+print(max(b))
