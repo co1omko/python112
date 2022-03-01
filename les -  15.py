@@ -102,11 +102,11 @@
 # print(db(name='Bob',age=31, weight=61, eyes_color="gray"))
 # print("my_dict =", my_dict)
 
-def func(a, *args, b=False, **kwargs):
-    return a, args, b, kwargs
-#
-#
-print(func(1, 2, 3, 4, b=True, x=11, y=12, z=13))
+# def func(a, *args, b=False, **kwargs):
+#     return a, args, b, kwargs
+# #
+# #
+# print(func(1, 2, 3, 4, b=True, x=11, y=12, z=13))
 
 
 # def func1(*args):
@@ -143,3 +143,113 @@ print(func(1, 2, 3, 4, b=True, x=11, y=12, z=13))
 #
 # hi()
 # bye()
+
+
+# i = 5
+#
+#
+# def func(arg=i):
+#     print(arg)
+#
+#
+# i = 6
+# func()
+
+
+# def add_two(a):
+#     x = 2
+#
+#     def add_some():
+#         print("x = " + str(x))
+#         return a + x
+#
+#     return add_some()
+#
+#
+# print(add_two(3))
+
+# x = 4
+#
+#
+# def fun():
+#     print(x + 3)
+#
+#
+# fun()
+
+
+# import builtins
+#
+# names = dir(builtins)
+#
+# for t in names:
+#     print(t)
+
+
+# def outer_func(who):
+#     print(who)
+#
+#     def inner_func():
+#         print("Hello,", who)
+#
+#     inner_func()
+#
+#
+# outer_func("World!")
+
+
+# def fun1():
+#     a = 6
+#
+#     def fun2(b):
+#         a = 4
+#         print("Сумма внутренней функции: ", a + b)
+#
+#     print("Значение внешней переменной а:", a)
+#
+#     fun2(4)
+#
+#
+# fun1()
+
+
+# x = 25
+#
+#
+# def fn():
+#     global t
+#     a = 30
+#     t = a
+#     print("global:", x)
+#
+#     def inner():
+#         nonlocal a
+#         a = 35
+#         print(a)
+#
+#     inner()
+#
+#
+# fn()
+# z = x + t
+# print(z)
+
+
+def fn1():
+    x1 = 25
+
+    def fn2():
+        x1 = 33
+
+        def fn3():
+            nonlocal x1
+            x1 = 55
+
+        fn3()
+        print("fn2.x1 =", x1)
+
+    fn2()
+    print("fn1.x1 =", x1)
+
+
+fn1()
