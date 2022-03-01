@@ -209,13 +209,13 @@
 # print((lambda x: (lambda y: (lambda z: x + y + z)))(2)(4)(6))
 
 
-# d = {'a': 10, 'b': 15, 'c': 4}
-# list_d = list(d.items())
-# print(list_d)
-# list_d.sort(key=lambda i: i[1])
-# print(list_d)
+d = {'a': 10, 'b': 15, 'c': 4}
+list_d = list(d.items())
+print(list_d)
+list_d.sort(key=lambda i: i[0])
+print(list_d)
 
-a = [(lambda x, y: x + y), (lambda x, y: x - y), (lambda x, y: x * y), (lambda x, y: x / y)]
-b = a[0](12, 6)
-print(b)
-print(type(lambda x, y: x - y))
+# a = [(lambda x, y: x + y), (lambda x, y: x - y), (lambda x, y: x * y), (lambda x, y: x / y)]
+# b = a[0](12, 6)
+# print(b)
+# print(type(lambda x, y: x - y))
