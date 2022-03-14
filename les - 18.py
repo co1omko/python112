@@ -132,9 +132,9 @@ s = "hello, WORLD! I am learning Python"
 # print(s.title()) # Hello, World! I Am Learning Python
 #
 #
-# print(s.count("h", 0, -4)) # количество заданных символов
+print(s.count("h", 0,)) # количество заданных символов
 # print(s.find("Python")) # возвращает первый индекс задданых символов
-print(s.index("Python")) # возвращает первый индекс задданых символов
+# print(s.index("Python")) # возвращает первый индекс задданых символов
 
 # s = 'один два'
 # s2 = s[s.find(' ') + 1:] + ' ' + s[:s.find(' ')]
