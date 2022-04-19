@@ -175,40 +175,40 @@
 # print(p2.count)
 
 
-class Robot:
-    k = 0
-
-    def __init__(self, name):
-        self.name = name
-        print("Инициализация робота: ", self.name)
-        print("Приветствую! Меня зовут: ", self.name)
-        Robot.k += 1
-
-    def __del__(self):
-        print(self.name, "выключсется!")
-        Robot.k -= 1
-
-        if Robot.k == 0:
-            print(self.name, "был последним")
-        else:
-            print("Работающий роботов: ", Robot.k)
-
-
-droid1 = Robot("R2-D2")
-print("Численность роботов: ", Robot.k)
-
-droid2 = Robot("S-3PO")
-print("Численность роботов: ", Robot.k)
-
-droid3 = Robot("SC-RO")
-print("Численность роботов: ", Robot.k)
-
-droid4 = Robot("YY-XX")
-print("Численность роботов: ", Robot.k)
-
-print("*" * 20)
-del droid1
-del droid2
-del droid3
-del droid4
-print("Численность роботов: ", Robot.k)
+# class Robot:
+#     k = 0
+#
+#     def __init__(self, name):
+#         self.name = name
+#         print("Инициализация робота: ", self.name)
+#         print("Приветствую! Меня зовут: ", self.name)
+#         Robot.k += 1
+#
+#     def __del__(self):
+#         print(self.name, "выключсется!")
+#         Robot.k -= 1
+#
+#         if Robot.k == 0:
+#             print(self.name, "был последним")
+#         else:
+#             print("Работающий роботов: ", Robot.k)
+#
+#
+# droid1 = Robot("R2-D2")
+# print("Численность роботов: ", Robot.k)
+#
+# droid2 = Robot("S-3PO")
+# print("Численность роботов: ", Robot.k)
+#
+# droid3 = Robot("SC-RO")
+# print("Численность роботов: ", Robot.k)
+#
+# droid4 = Robot("YY-XX")
+# print("Численность роботов: ", Robot.k)
+#
+# print("*" * 20)
+# del droid1
+# del droid2
+# del droid3
+# del droid4
+# print("Численность роботов: ", Robot.k)
