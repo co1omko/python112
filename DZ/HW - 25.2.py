@@ -8,6 +8,10 @@ class Root(ABC):
         self.b = b
         self.c = c
 
+    @abstractmethod
+    def equations(self):
+        pass
+
 
 class Linear(Root):
 
@@ -33,7 +37,6 @@ class Square(Root):
             print("x = %.2f" % x)
         else:
             print("Корней нет")
-
 
 
 l = Linear(3, 7, 0)

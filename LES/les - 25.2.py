@@ -278,56 +278,56 @@
 # q.move()
 
 
-# from abc import ABC, abstractmethod
-#
-#
-# class Currency(ABC):
-#     def __init__(self, value):
-#         self.value = value
-#
-#     @abstractmethod
-#     def convert_to_rub(self):
-#         pass
-#
-#     def print_value(self):
-#         print(self.value, end=" ")
-#
-#
-# class Dollar(Currency):
-#     rate_to_rub = 74.16
-#     suffix = 'USD'
-#
-#     def convert_to_rub(self):
-#         rub = self.value * Dollar.rate_to_rub
-#         return rub
-#
-#     def print_value(self):
-#         super().print_value()
-#         print(Dollar.suffix, end=" ")
-#
-#
-# class Euro(Currency):
-#     rate_to_rub = 90.14
-#     suffix = 'EUR'
-#
-#     def convert_to_rub(self):
-#         rub = self.value * Euro.rate_to_rub
-#         return rub
-#
-#     def print_value(self):
-#         super().print_value()
-#         print(Euro.suffix, end=" ")
-#
-#
-# d = [Dollar(5), Dollar(10), Dollar(50), Dollar(100)]
-# for elem in d:
-#     elem.print_value()
-#     print(f"={elem.convert_to_rub():.2f}")
-# print()
-# d = [Euro(5), Euro(10), Euro(50), Euro(100)]
-# for elem in d:
-#     elem.print_value()
-#     print(f"={elem.convert_to_rub():.2f}")
+from abc import ABC, abstractmethod
+
+
+class Currency(ABC):
+    def __init__(self, value):
+        self.value = value
+
+    @abstractmethod
+    def convert_to_rub(self):
+        pass
+
+    def print_value(self):
+        print(self.value, end=" ")
+
+
+class Dollar(Currency):
+    rate_to_rub = 74.16
+    suffix = 'USD'
+
+    def convert_to_rub(self):
+        rub = self.value * Dollar.rate_to_rub
+        return rub
+
+    def print_value(self):
+        super().print_value()
+        print(Dollar.suffix, end=" ")
+
+
+class Euro(Currency):
+    rate_to_rub = 90.14
+    suffix = 'EUR'
+
+    def convert_to_rub(self):
+        rub = self.value * Euro.rate_to_rub
+        return rub
+
+    def print_value(self):
+        super().print_value()
+        print(Euro.suffix, end=" ")
+
+
+d = [Dollar(5), Dollar(10), Dollar(50), Dollar(100)]
+for elem in d:
+    elem.print_value()
+    print(f"={elem.convert_to_rub():.2f}")
+print()
+d = [Euro(5), Euro(10), Euro(50), Euro(100)]
+for elem in d:
+    elem.print_value()
+    print(f"={elem.convert_to_rub():.2f}")
 
 # Интерфейсы
 
@@ -388,24 +388,24 @@
 # print(inner.inner_name)
 
 
-class Color:
-    def __init__(self):
-        self.name = 'Green'
-        self.lg = self.LightGreen()
-
-    def show(self):
-        print("Name:", self.name)
-
-    class LightGreen:
-        def __init__(self):
-            self.name = 'Light Green'
-            self.code = '024AVC'
-
-        def display(self):
-            print('Name', self.name)
-            print('Code', self.code)
-
-outer = Color()
-outer.show()
-g = outer.lg
-g.display()
+# class Color:
+#     def __init__(self):
+#         self.name = 'Green'
+#         self.lg = self.LightGreen()
+#
+#     def show(self):
+#         print("Name:", self.name)
+#
+#     class LightGreen:
+#         def __init__(self):
+#             self.name = 'Light Green'
+#             self.code = '024AVC'
+#
+#         def display(self):
+#             print('Name', self.name)
+#             print('Code', self.code)
+#
+# outer = Color()
+# outer.show()
+# g = outer.lg
+# g.display()
