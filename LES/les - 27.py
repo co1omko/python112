@@ -63,18 +63,18 @@ import csv
 #     print(f"Всего в файле {count} строк.")
 
 
-with open('data.csv') as r_file:
-    fieldnames = ['Имя', 'Профессия', 'Год рождения']
-    file_reader = csv.DictReader(r_file, delimiter=";", fieldnames=fieldnames)
-    count = 0
-
-    for row in file_reader:
-        if count == 0:
-            print(f"Файл содержит столбцы: {', '.join(row)}")
-        print(f"\t{row['Имя']} - {row['Профессия']}. Родился в {row['Год рождения']} году.")
-        count += 1
-
-    print(f"Всего в файле {count} строк.")
+# with open('data.csv') as r_file:
+#     fieldnames = ['Имя', 'Профессия', 'Год рождения']
+#     file_reader = csv.DictReader(r_file, delimiter=";", fieldnames=fieldnames)
+#     count = 0
+#
+#     for row in file_reader:
+#         if count == 0:
+#             print(f"Файл содержит столбцы: {', '.join(row)}")
+#         print(f"\t{row['Имя']} - {row['Профессия']}. Родился в {row['Год рождения']} году.")
+#         count += 1
+#
+#     print(f"Всего в файле {count} строк.")
 
 
 # with open("student.csv", mode='w') as f:
