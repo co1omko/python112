@@ -90,72 +90,78 @@ from bs4 import BeautifulSoup
 # if __name__ == '__main__':
 #     main()
 
-def get_html(url):
-    r = requests.get(url)
-    return r.text
 
 
-def refine_cy(s):
-    return s.split()[-1]
+# def get_html(url):
+#     r = requests.get(url)
+#     return r.text
+#
+#
+# def refine_cy(s):
+#     return s.split()[-1]
+#
+#
+# def write_csv(data):
+#     with open('plugins1.csv', 'a') as f:
+#         writer = csv.writer(f, lineterminator='\r', delimiter=';')
+#         writer.writerow((data['name'],
+#                          data['url'],
+#                          data['snippet'],
+#                          data['active'],
+#                          data['cy']))
+#
+#
+# def get_page_data(html):
+#     soup = BeautifulSoup(html, 'lxml')
+#
+#     elements = soup.find_all('article', class_='plugin-card')
+#     for el in elements:
+#         try:
+#             name = el.find('h3').text
+#         except ValueError:
+#             name = ''
+#
+#         try:
+#             url = el.find('h3').find('a').get('href')
+#         except ValueError:
+#             url = ''
+#
+#         try:
+#             snippet = el.find('div', class_='entry-excerpt').text.strip()
+#         except ValueError:
+#             snippet = ''
+#
+#         try:
+#             active = el.find('span', class_='active-installs').text.strip()
+#         except ValueError:
+#             active = ''
+#
+#         try:
+#             version = el.find('span', class_='tested-with').text
+#             cy = refine_cy(version)
+#         except ValueError:
+#             cy = ''
+#         print(cy)
+#         data = {
+#             'name': name,
+#             'url': url,
+#             'snippet': snippet,
+#             'active': active,
+#             'cy': cy
+#         }
+#
+#         write_csv(data)
+#
+#
+# def main():
+#     for i in range(1, 5):
+#         url = f'https://ru.wordpress.org/plugins/browse/blocks/page/{i}/'
+#         get_page_data(get_html(url))
+#
+#
+# if __name__ == '__main__':
+#     main()
 
 
-def write_csv(data):
-    with open('plugins1.csv', 'a') as f:
-        writer = csv.writer(f, lineterminator='\r', delimiter=';')
-        writer.writerow((data['name'],
-                         data['url'],
-                         data['snippet'],
-                         data['active'],
-                         data['cy']))
 
 
-def get_page_data(html):
-    soup = BeautifulSoup(html, 'lxml')
-
-    elements = soup.find_all('article', class_='plugin-card')
-    for el in elements:
-        try:
-            name = el.find('h3').text
-        except ValueError:
-            name = ''
-
-        try:
-            url = el.find('h3').find('a').get('href')
-        except ValueError:
-            url = ''
-
-        try:
-            snippet = el.find('div', class_='entry-excerpt').text.strip()
-        except ValueError:
-            snippet = ''
-
-        try:
-            active = el.find('span', class_='active-installs').text.strip()
-        except ValueError:
-            active = ''
-
-        try:
-            version = el.find('span', class_='tested-with').text
-            cy = refine_cy(version)
-        except ValueError:
-            cy = ''
-        print(cy)
-        # data = {
-        #     'name': name,
-        #     'url': url,
-        #     'snippet': snippet,
-        #     'active': active,
-        #     'cy': cy
-        # }
-        #
-        # write_csv(data)
-
-
-def main():
-    for i in range(1, 5):
-        url = f'https://ru.wordpress.org/plugins/browse/blocks/page/{i}/'
-        get_page_data(get_html(url))
-
-
-if __name__ == '__main__':
-    main()
