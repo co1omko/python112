@@ -23,3 +23,13 @@ pip install jinja2
 
 {% block title %}
 {% endblock %}
+
+
+from flaskapp.les33flask import create_db
+
+terminal
+
+cd tasks
+python
+from app import db
+db.create_all()

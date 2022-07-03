@@ -8,3 +8,21 @@ pip install jinja2
 {# #} - блок комментариев
 # ## - строчный комментарий
 {% raw %}{% endraw %}
+{% fro <выражение> %}
+	<повторяемый фрагмент>
+{% endfor %}
+
+
+{% if <условие> %}
+	<код>
+{% elif <условие> %}
+	<код>
+{% else %}
+	<код>
+{% endif %}
+
+{% block title %}
+{% endblock %}
+
+
+from flaskapp.les33flask import create_db
