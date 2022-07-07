@@ -2,5 +2,17 @@
 
 {% block content %}
 {{ super() }}
-    <p>Содержимое главной страницы</p>
+
+<h1>Pricing</h1>
+<ul>
+    {% for p in kurs() %}
+    <li>
+        <p class="title">{{ p.title }}</p>
+        <p class="price">{{ p.price }} руб/мес</p>
+        <div class="annonce">{{ p.text }}</div>
+        <div><input type="submit" value="Купить"></div>
+    </li>
+    {% endfor %}
+</ul>
+
 {% endblock %}
