@@ -33,3 +33,8 @@ cd tasks
 python
 from app import db
 db.create_all()
+
+
+Django
+
+django-admin startproject password_generator_project
