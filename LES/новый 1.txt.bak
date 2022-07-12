@@ -38,3 +38,15 @@ db.create_all()
 Django
 
 django-admin startproject password_generator_project
+cd password_generator_project
+python manage.py runserver
+python manage.py runserver 4000
+python manage.py runserver 1.2.3.4:4000
+
+MVC == MTV
+
+python manage.py startapp generator
+
+создать  templates
+	home.html
+
