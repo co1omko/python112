@@ -97,3 +97,9 @@ python manage.py startapp blog создаем само приложение
 зарегестрировать приложение в settings.py 
 'blog.apps.BlogConfig'
 
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py createsuperuser создание супер пользователя
+
+python manage.py collectstatic собирает все файлы static в одной папке

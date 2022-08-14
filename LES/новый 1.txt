@@ -103,3 +103,11 @@ python manage.py migrate
 python manage.py createsuperuser создание супер пользователя
 
 python manage.py collectstatic собирает все файлы static в одной папке
+
+utils.py - для создания миксинов
+
+LoginRequiredMixin - закрывает доступ для тех кто не авторизован
+
+@login_required 
+
+paginate_by = N
