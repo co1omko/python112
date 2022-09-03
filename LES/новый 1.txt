@@ -143,3 +143,30 @@ pwd - посмотреть путь к папке
 /home/programmingblog008/blog
 
 python manage.py collectstatic
+
+
+
+NEW PROJECT : FifthApp
+
+
+django-admin startproject landing_page
+
+python manage.py runserver
+python manage.py startapp cms
+
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py createsuperuser
+
+templates
+	cms
+		base.html
+		carusel.html
+		index.html
+		
+python manage.py startapp price
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py startapp crm

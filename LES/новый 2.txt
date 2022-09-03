@@ -1,0 +1,18 @@
+@BotFather
+
+/start
+
+/newbot
+
+Обработчик заявок (бот)
+ColomkoBot
+https://api.telegram.org/bot5653568332:AAHnI4r0cf2qzcvyJwy3oCZ5gSW-NQ80iUg/sendMessage?chat_id=-611174214&text=test
+Создать группу
+
+@get_id_bot
+Your group Chat ID : -611174214
+/my_id@get_id_bot
+
+python manage.py startapp telebot
+
+sendmessage.py

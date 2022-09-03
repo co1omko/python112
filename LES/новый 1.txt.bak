@@ -138,3 +138,8 @@ pip install django
 pip install pillow
 pip install django-simple-captcha
 pip install django-ckeditor
+
+pwd - посмотреть путь к папке
+/home/programmingblog008/blog
+
+python manage.py collectstatic
