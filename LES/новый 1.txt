@@ -170,3 +170,20 @@ python manage.py makemigrations
 python manage.py migrate
 
 python manage.py startapp crm
+ 
+ 
+new project
+
+sixthApp
+
+django-admin startproject app
+
+python manage.py runserver
+python manage.py startapp exchange
+python manage.py startapp weather
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py createsuperuser
+
+4710969a4071456088b165908220509
