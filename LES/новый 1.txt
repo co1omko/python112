@@ -187,3 +187,11 @@ python manage.py migrate
 python manage.py createsuperuser
 
 4710969a4071456088b165908220509
+
+
+NEW PROJECT
+
+SeventhApp
+
+django-admin startproject shop
+python manage.py startapp products
