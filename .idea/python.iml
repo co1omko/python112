@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Victorina2.0/quiz" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/FifthApp/landing_page" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SeventhApp/shop" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/EightApp/service_vacancies" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="inheritedJdk" />

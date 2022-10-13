@@ -205,3 +205,10 @@ python manage.py loaddata categoty.json # если сработало через
 python manage.py loaddata goods.json
 
 python manage.py startapp users
+
+NEW PROJECT
+EightApp
+
+django-admin startproject service_vacancies
+
+python manage.py startapp service

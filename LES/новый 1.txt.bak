@@ -195,3 +195,13 @@ SeventhApp
 
 django-admin startproject shop
 python manage.py startapp products
+
+сохранение базы данных перед добавлением новой модели
+
+python manage.py dumpdata products.ProductCategory > categoty.json
+python manage.py dumpdata products.Product > goods.json
+
+python manage.py loaddata categoty.json # если сработало через json
+python manage.py loaddata goods.json
+
+python manage.py startapp users
